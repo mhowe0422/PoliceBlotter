@@ -1,12 +1,19 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        Police Blotter
+# Purpose:     Read and convert Pittsburgh Police Blotter pdf to text
 #
-# Author:      Mark
-#
+# Author:      Andy Somerville
 # Created:     01/04/2014
-# Copyright:   (c) Mark 2014
-# Licence:     <your licence>
+#
+# Changed by:  Mark Howe
+# Modified     04/16/2014
+# Modifications: pdfminer didn't have process_pdf
+#                used interpreter.process_page(page)
+#                instead of process_pdf(rsrcmgr, device, fp, pagenos, maxpages=maxpages, password=password, caching=caching, check_extractable=True)
+#                added argv for -i inputfile and -o outfile
+#                hard coded (bad idea) path
+# Copyright:   (c) Andy Somerville 2014
+# Licence:     <MIT licensed (free to copy derive for any reason as long as the copyright info is preserved).>
 #-------------------------------------------------------------------------------
 
 
